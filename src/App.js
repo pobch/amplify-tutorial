@@ -68,7 +68,7 @@ function App() {
 }
 
 const styles = {
-  container: {},
+  container: { width: 400, margin: '0 auto' },
   input: {},
   button: {},
   todo: {},
