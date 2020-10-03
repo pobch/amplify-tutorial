@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { API, graphqlOperation } from 'aws-amplify'
 import { createTodo } from './graphql/mutations'
 import { listTodos } from './graphql/queries'
+import { withAuthenticator } from '@aws-amplify/ui-react'
 
 const initialState = { name: '', description: '' }
 
@@ -88,4 +89,4 @@ const styles = {
   todoDescription: { marginBottom: 0 },
 }
 
-export default App
+export default withAuthenticator(App)
