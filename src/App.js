@@ -68,12 +68,24 @@ function App() {
 }
 
 const styles = {
-  container: { width: 400, margin: '0 auto' },
-  input: {},
-  button: {},
-  todo: {},
-  todoName: {},
-  todoDescription: {},
+  container: {
+    width: 400,
+    margin: '0 auto',
+    padding: 20,
+    display: 'flex',
+    flexDirection: 'column',
+  },
+  input: { border: 'none', backgroundColor: '#ddd', marginBottom: 10, fontSize: 18, padding: 8 },
+  button: {
+    backgroundColor: 'black',
+    color: 'white',
+    outline: 'none',
+    fontSize: 18,
+    padding: '12px 0px',
+  },
+  todo: { marginBottom: 15 },
+  todoName: { fontSize: 20, fontWeight: 'bold' },
+  todoDescription: { marginBottom: 0 },
 }
 
 export default App
